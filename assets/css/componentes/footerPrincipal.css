@@ -1,0 +1,11 @@
+.footerPrincipal{
+    background-color: var(--primary-900);
+    padding:3rem;
+    margin-top:auto;
+}
+
+.footerPrincipal__text{
+    color:var(--secondary-50);
+    font-size:.8rem;
+    text-align: center;
+}

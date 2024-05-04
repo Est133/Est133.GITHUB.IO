@@ -1,0 +1,117 @@
+.cards{
+    display:grid;
+    gap: 1rem;
+    padding-inline: 2rem;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .card{
+    border-radius: var(--radius);
+    background-color: var(--secondary-50);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card__image{
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      width:100%;
+    }
+
+    .card__category{
+        font-size: .8rem;
+        text-align: right;
+        padding:.5rem 1rem;
+    }
+
+    .card__body,
+    .card__footer{
+        padding-inline:1rem;
+        font-size: 1rem;
+        margin-block: 1rem;
+    }
+
+    .card__title{
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-block: 1rem;
+    }
+
+    .card__description{
+        opacity: .6;
+    }
+
+    .card__services{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem
+    }
+
+    /*small*/
+
+    .card--sm{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        gap:1rem;
+      }
+
+      .card--sm .card__container{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:1rem 0;
+      }
+
+
+      .card--sm .card__container *{
+        margin:0;
+      }
+
+      .card--sm .card__image{
+        aspect-ratio: 1/1;
+        max-height: 200px;
+        object-fit:cover;
+      }
+
+      .card--sm .card__category{
+        text-align: right;
+        width: 100%;
+      }
+
+      /*extra small*/
+
+    .card--xs{
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: normal;
+      gap:.5rem;
+    }
+
+    .card--xs .card__container{
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding:.8rem 0;
+    }
+
+    .card--xs .card__container *{
+      margin:0;
+      font-size: .8rem;
+    }
+
+    .card--xs .card__image{
+      aspect-ratio: 1/1;
+      max-height: 60px;
+      object-fit:cover;
+    }
+
+    .card--xs .card__category{
+      text-align: right;
+      width: 100%;
+    }

@@ -1,0 +1,16 @@
+.filters{
+    font-size: .8rem;
+    display: flex;
+   flex-wrap: nowrap;
+   overflow-x: auto;
+   gap:1rem;
+   scrollbar-width: none;
+   width: 100%;
+}
+
+.filters__item{
+    padding: .5em 1em;
+    background-color: var(--primary-500);
+    border-radius: var(--radius);
+    flex: 0 0 auto; 
+}
